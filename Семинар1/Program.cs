@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.Write("Input a number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Hello, World! " + num);
+Console.WriteLine("Your number is " + num);
