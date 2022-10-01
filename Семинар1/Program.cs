@@ -103,6 +103,7 @@ Console.WriteLine($"max = {max} and min = {min}");
 
 */
 
+/*
 Console.Write("Input a first number: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a second number: ");
@@ -125,3 +126,5 @@ if(n3 > max)
 }
 Console.Write("max = ");
 Console.WriteLine(max);
+*/
+
