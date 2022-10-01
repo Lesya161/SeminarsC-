@@ -128,3 +128,15 @@ Console.Write("max = ");
 Console.WriteLine(max);
 */
 
+/*
+Console.Write("Input a number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if(num % 2 == 0)
+{
+    Console.WriteLine("Yes");
+}
+else
+{
+    Console.WriteLine("No");
+}
+*/
