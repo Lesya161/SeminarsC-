@@ -80,4 +80,17 @@ int day = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Введенное число выходной? {Lol(day)}");
 */
 
+int Lol(int a)
+{
+    int sec;
+    if(a < 100 || a > 1000)
+    return -1;
+    else 
+        int sec = a / 10;
+    return sec;
+}
 
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int secondDigit = Lol(number);
+Console.WriteLine($"вторая цифра от {number} это {Lol}");
