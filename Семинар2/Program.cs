@@ -61,3 +61,23 @@ Console.WriteLine($"Ответ: {Del(number,a,b)}");
 // либо
 // bool Suc = Del(number,a,b);
 // Console.WriteLine($"Ответ: {Suc}");
+
+
+
+/*
+bool Lol(int week)
+{
+    if(week == 6 || week == 7)
+        return true;
+    else
+        return false;
+}
+
+Console.WriteLine("Введите день недели: ");
+int day = Convert.ToInt32(Console.ReadLine());
+//bool result = Lol(day);
+//Console.WriteLine($"Введенное число выходной? {result}");
+Console.WriteLine($"Введенное число выходной? {Lol(day)}");
+*/
+
+
