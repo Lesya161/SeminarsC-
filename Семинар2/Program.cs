@@ -102,3 +102,26 @@ Console.WriteLine(result);
 //Console.WriteLine($"Entered day {day} of the weekend?");
 //Console.Write(CheckForWeekend(day));
 */
+
+
+
+int SecondDigit(int num)
+{
+    int result;
+    int second;
+    if(num < 100 || num > 1000)
+        return -1;
+    else
+    {
+        second = num / 10 % 10;
+        result = second;
+        return result;
+    }
+    }
+
+Console.WriteLine("Input a three-digit number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int secondDigitNumber = SecondDigit(number);
+Console.WriteLine($"second digit of {number} is {secondDigitNumber}");
+
+
