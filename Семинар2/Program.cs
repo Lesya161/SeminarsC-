@@ -132,7 +132,7 @@ int FirdDigit(int num)
         return -1;
     else
     {
-        while(num > 999)
+        while(num >= 1000)
             num = num / 10;
             result = num % 10;
 	    return result;
