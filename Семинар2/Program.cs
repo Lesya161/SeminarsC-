@@ -125,3 +125,20 @@ int secondDigitNumber = SecondDigit(number);
 Console.WriteLine($"second digit of {number} is {secondDigitNumber}");
 */
 
+int FirdDigit(int num)
+{
+    int result;
+    if(num < 100)
+        return -1;
+    else
+    {
+        while(num > 999)
+            num = num / 10;
+            result = num % 10;
+	    return result;
+    }
+}
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int firdDigit = FirdDigit(number);
+Console.WriteLine($"fird digit of {number} is {firdDigit}");
