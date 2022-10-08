@@ -63,9 +63,8 @@ Console.WriteLine($"Ответ: {Del(number,a,b)}");
 // Console.WriteLine($"Ответ: {Suc}");
 
 
-
 /*
-bool Lol(int week)
+bool CheckForWeekend(int week)
 {
     if(week == 6 || week == 7)
         return true;
@@ -73,24 +72,33 @@ bool Lol(int week)
         return false;
 }
 
-Console.WriteLine("Введите день недели: ");
+Console.Write("Enter the day of the week in a number: ");
 int day = Convert.ToInt32(Console.ReadLine());
-//bool result = Lol(day);
-//Console.WriteLine($"Введенное число выходной? {result}");
-Console.WriteLine($"Введенное число выходной? {Lol(day)}");
+//bool result = CheckForWeekend(day);
+//Console.WriteLine($"Entered day {day} of the weekend? {result}");
+Console.WriteLine($"Entered day {day} of the weekend?");
+Console.Write(CheckForWeekend(day));
 */
 
-int Lol(int a)
+/*
+string CheckForWeekend(int week)
 {
-    int sec;
-    if(a < 100 || a > 1000)
-    return -1;
-    else 
-        int sec = a / 10;
-    return sec;
+    if(week < 1 || week >= 8)
+        return "error - it is not day of week";
+    else
+    {
+        if(week == 6 || week == 7)
+            return "it is weekend";
+        else
+            return "it is work day";
+    }
 }
 
-Console.WriteLine("Введите трехзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int secondDigit = Lol(number);
-Console.WriteLine($"вторая цифра от {number} это {Lol}");
+Console.Write("Enter the day of the week in a number: ");
+int day = Convert.ToInt32(Console.ReadLine());
+string result = CheckForWeekend(day);
+Console.WriteLine($"Entered day {day} of the weekend?");
+Console.WriteLine(result);
+//Console.WriteLine($"Entered day {day} of the weekend?");
+//Console.Write(CheckForWeekend(day));
+*/
