@@ -117,7 +117,7 @@ int SecondDigit(int num)
         result = second;
         return result;
     }
-    }
+}
 
 Console.WriteLine("Input a three-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
