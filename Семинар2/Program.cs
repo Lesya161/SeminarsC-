@@ -104,7 +104,7 @@ Console.WriteLine(result);
 */
 
 
-
+/*
 int SecondDigit(int num)
 {
     int result;
@@ -123,5 +123,5 @@ Console.WriteLine("Input a three-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int secondDigitNumber = SecondDigit(number);
 Console.WriteLine($"second digit of {number} is {secondDigitNumber}");
-
+*/
 
