@@ -1,0 +1,15 @@
+C:\Users\79773\Desktop\Семинары С#\Семинар3\bin\Debug\net6.0\Семинар3.exe
+C:\Users\79773\Desktop\Семинары С#\Семинар3\bin\Debug\net6.0\Семинар3.deps.json
+C:\Users\79773\Desktop\Семинары С#\Семинар3\bin\Debug\net6.0\Семинар3.runtimeconfig.json
+C:\Users\79773\Desktop\Семинары С#\Семинар3\bin\Debug\net6.0\Семинар3.dll
+C:\Users\79773\Desktop\Семинары С#\Семинар3\bin\Debug\net6.0\Семинар3.pdb
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.csproj.AssemblyReference.cache
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.AssemblyInfoInputs.cache
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.AssemblyInfo.cs
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.csproj.CoreCompileInputs.cache
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.dll
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\refint\Семинар3.dll
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.pdb
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\Семинар3.genruntimeconfig.cache
+C:\Users\79773\Desktop\Семинары С#\Семинар3\obj\Debug\net6.0\ref\Семинар3.dll
