@@ -49,3 +49,33 @@ Console.WriteLine("Факториал не может быть отрицате�
 else
 Console.WriteLine($"Факториал числа {f} это {Factorial(f)}");
 */
+
+//Выводит массив из М элементов, наполненных 0 и 1 в случайном порядке.
+/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int [size];
+    for(int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
+    
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array [i] + " ");
+    
+    Console.WriteLine();
+}
+
+Console.Write("Введите число элементов: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите мин значение элемента: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите максимальное значение элемента: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(size, min, max);
+ShowArray(myArray);
+*/
