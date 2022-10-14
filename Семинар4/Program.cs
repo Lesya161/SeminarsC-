@@ -79,3 +79,32 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandomArray(size, min, max);
 ShowArray(myArray);
 */
+
+int[] CreateArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int [size];
+    for(int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
+        //Console.WriteLine("Введите число: ");
+        //array [i] = Convert.ToInt32(Console.ReadLine());
+    
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array [i] + " ");
+    
+    Console.WriteLine();
+}
+
+Console.Write("Введите число элементов: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите мин значение элемента: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите максимальное значение элемента: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] endArray = CreateArray(size, min, max);
+ShowArray(endArray);
