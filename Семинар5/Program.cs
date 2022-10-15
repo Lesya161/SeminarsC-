@@ -108,4 +108,32 @@ int result = Current(array);
 Console.WriteLine("Число двузначных эдементов массива: " + result);
 */
 
+//Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 
+bool YourNumber(int[] array, int num)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] == num)
+        return true;
+    }
+    return false;
+}
+
+Console.Write("Введите число элементов: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите мин элемент: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите макс элемент: ");
+int max = Convert.ToInt32(Console.ReadLine());
+int[] endArray = CreateArray(size, min, max);
+ShowArray(endArray);
+Console.Write("Введите ваше число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ваше число есть в массиве? " + YourNumber(endArray, number));
+
+//после инт намбер
+//if(YourNumber(endArray, number))
+//    Console.WriteLine("Твое число есть в массиве");
+//else
+//    Console.WriteLine("Твоего числа нет в массиве");
