@@ -81,3 +81,31 @@ ShowArray(thisArray);
 thisArray = ReversArray(thisArray);
 ShowArray(thisArray);
 */
+
+//Задайте массив из 12 случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
+/*
+int Current(int[] array)
+{
+    int current = 0;
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] < 100 && array[i] > 9)
+        current++;
+    }
+    return current;
+}
+
+Console.Write("Введите число элементов: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите мин элемент: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите макс элемент: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] array = CreateArray(size, min, max);
+ShowArray(array);
+int result = Current(array);
+Console.WriteLine("Число двузначных эдементов массива: " + result);
+*/
+
+
