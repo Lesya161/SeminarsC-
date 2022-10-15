@@ -59,3 +59,25 @@ ShowArray(myArray);
 int result = SumOfNegatives(myArray);
 Console.WriteLine("сумма отриц элементов это " + result);
 */
+
+//Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
+/*
+int[] ReversArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        array[i] = array[i] * (-1);
+    return array;
+}
+
+Console.Write("Введите число элементов: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите мин элемент: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите макс элемент: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] thisArray = CreateArray(size, min, max);
+ShowArray(thisArray);
+thisArray = ReversArray(thisArray);
+ShowArray(thisArray);
+*/
