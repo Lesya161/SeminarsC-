@@ -23,7 +23,7 @@ int[] CreateRandomArray()
 
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
-        array[i] = new Random().Next();
+        array[i] = new Random().Next(min, max + 1);
     return array;
 }
 
@@ -35,6 +35,7 @@ void ShowArray(int[] array)
     Console.WriteLine();
 }
 
+/*
 int[] ChangeArray1(int[] array) 
 {
   int[] newArray = new int[array.Length];
@@ -49,7 +50,7 @@ int[] newArray = ChangeArray1(myArray);
 //ShowArray(myArray);
 //ShowArray(newArray);
 //ShowArray(myArray);
-
+*/
 
 //Напишите программу, которая перевернёт одномерный массив (последний элемент будет на первом месте, а первый - на последнем и т.д.)
 /*
@@ -94,21 +95,22 @@ Console.Write(Exist(2, 2, 3));
 */
 
 //Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
-/*
-int[] NewArray(int[] array) 
+
+int[] Copy(int[] array) 
 {
-  int[] newArray = new int[array.Length];
+  int[] copyArray = new int[array.Length];
   for (int i = 0; i < array.Length; i++)
-    newArray[i] = array[i];
-   return newArray;
+    copyArray[i] = array[i];
+   return copyArray;
 }
 int[] oneArray = CreateRandomArray();
-int[] twoArray = NewArray(oneArray);
+int[] copyArray = Copy(oneArray);
 
 ShowArray(oneArray);
-ShowArray(twoArray);
+ShowArray(copyArray);
 ShowArray(oneArray);
-*/
+
+
 //Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: a и b.
 // Ряд фибоначи это числовая последовательность это каждый новый элемент является суммой первых двух элементов
 /*
