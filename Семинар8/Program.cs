@@ -29,7 +29,7 @@ void Show2dArray(int[,] array)
 
 //Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. 
 //В случае, если это невозможно, программа должна вывести сообщение для пользователя.
-
+/*
 void ChangeArray(int[,] array)
 {
   if(array.GetLength(0) != array.GetLength(1))
@@ -49,3 +49,33 @@ Show2dArray(oneArray);
 ChangeArray(oneArray);
 Console.WriteLine();
 Show2dArray(oneArray);
+*/
+
+//Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
+//менять строки заданные!
+
+/*
+void ReChange(int[,] array, int row1, int row2)
+{
+  if(row1 < array.GetLength(0) && row2 < array.GetLength(0))
+    for(int j = 0; j < array.GetLength(1); j++)
+    {
+      int temp = array[row1,j];
+      array[row1,j] = array[row2,j];
+      array[row2,j] = temp;
+    }
+  else
+    Console.WriteLine("Невозможно заменить");
+}
+
+int[,] twoArray = CreateRandom2dArray();
+Show2dArray(twoArray);
+Console.WriteLine("Ведите номер строки1: ");
+int str1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите номер строки2: ");
+int str2 = Convert.ToInt32(Console.ReadLine());
+ReChange(twoArray, str1 - 1, str2 - 1);
+Show2dArray(twoArray);
+*/
+
+//Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен наименьший элемент.
