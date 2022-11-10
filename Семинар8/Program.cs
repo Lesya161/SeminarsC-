@@ -79,3 +79,39 @@ Show2dArray(twoArray);
 */
 
 //Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен наименьший элемент.
+/*
+int[,] CutArray(int[,] array)
+{
+  int minI = 0;
+  int minJ = 0;
+  for(int i = 0; i < array.GetLength(0); i++)
+      for(int j = 0; j < array.GetLength(1); j++)
+          if(array[i,j] < array[minI,minJ])
+          {
+            minI = i;
+            minJ = j;
+          }
+
+  int[,] newArray = new int[array.GetLength(0) - 1, array.GetLength(1) -1];
+  for(int i = 0, x = 0; i < array.GetLength(0); i++)
+      if(i != minI)
+      {
+        for(int j = 0, y = 0; j < array.GetLength(1); j++)
+            if(j != minJ)
+            {
+              newArray[x,y] = array[i,j];
+              y++;
+            }
+        x++;
+      }
+    return newArray;
+}
+
+int[,] myArray = CreateRandom2dArray();
+
+Show2dArray(myArray);
+int[,] newArray = CutArray(myArray);
+Console.WriteLine();
+Show2dArray(newArray);
+
+*/
