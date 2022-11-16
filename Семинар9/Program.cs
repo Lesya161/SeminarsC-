@@ -1,121 +1,55 @@
-﻿/*
-int[,,] CreateRandom3dArray() 
-{
-  Console.Write("Input a number of rows: ");
-  int rows = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a number of columns: ");
-  int columns = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a number of width: ");
-  int width = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a min possible value: ");
-  int minVal = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a max possible value: ");
-  int maxVal = Convert.ToInt32(Console.ReadLine());
-
-  int[,,] array = new int[rows, columns, width];
-
-  for(int i = 0; i < rows; i++) 
-    for (int j = 0; j < columns; j++)
-      for (int k = 0; j < width; k++)
-        array[i,j,k] = new Random().Next(minVal, maxVal+1);
-  return array;
-}
-
-void Show3dArray(int[,,] array)  
-{
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-        for (int k = 0; j < array.GetLength(2); k++)
-          Console.Write($"{array[i,j,k]} {i}, {j}, {k}");
-    Console.WriteLine();
-    }
-  }
-}
-
-
-int[,,] array3d = CreateRandom3dArray();
-Show3dArray(array3d);
-
-*/
-
-
-int[,] CreateRandom2dArray() 
-{
-  Console.Write("Input a number of rows: ");
-  int rows = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a number of columns: ");
-  int columns = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a min possible value: ");
-  int minVal = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Input a max possible value: ");
-  int maxVal = Convert.ToInt32(Console.ReadLine());
-
-  int[,] array = new int[rows, columns];
-
-  for(int i = 0; i < rows; i++) 
-    for (int j = 0; j < columns; j++)
-        array[i,j] = new Random().Next(minVal, maxVal + 1);
-  return array;
-}
-void Show2dArray(int[,] array)  
-{
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
-      Console.Write(array[i,j] + " ");
-    Console.WriteLine();
-  }
-}
+﻿// Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от 1 до N.
 /*
-void SortedArray(int[,] array)
+void ShowNums(int num) 
 {
-int temp;
-  for (int i = 0; i < array.GetLength(0); i++)
-    for (int j = 0; j < array.GetLength(1); j++)
-      for (int a = 0; a < array.GetLength(1); a++)
-        if (array[i, a] > array[i, a + 1])
-        {
-          temp = array[i, a];
-          array[i, a] = array[i, a + 1];
-          array[i, a + 1] = temp;
-        }
-  }
+  //Console.Write(num + " "); обратно от 5 до 1
+  if(num > 1) ShowNums(num - 1);
+  Console.Write(num + " ");
+}
 
-int[,] oneArray = CreateRandom2dArray();
-Show2dArray(oneArray);
-SortedArray(oneArray);
-Console.WriteLine();
-Show2dArray(oneArray);
+ShowNums(5);
 */
 
 
-int[,] Metod(int[,]oneArray,int[,] twoArray)
+// Напишите программу, которая будет принимать на вход число и возвращать сумму его цифр.
+
+/*
+int SumOfDigits(int num) 
 {
-    if (oneArray.GetLength(0) == twoArray.GetLength(1))
-    int[,] endArray = new int [oneArray.GetLength(0), twoArray.GetLength(1)];
-    endArray[i,j] = 0;
+  if(num != 0) return SumOfDigits(num / 10) + num % 10;
+  else return 0;
+}
 
-    for (int i = 0; i < resultMatrix.GetLength(0); i++)
+Console.WriteLine(SumOfDigits(1256));
+*/
+
+
+// Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
+/*
+void NaturalNumbers(int m, int n) 
+{
+  if(m > n) 
   {
-    for (int j = 0; j < resultMatrix.GetLength(1); j++)
-    {
-        endArray[i,j] = endArray[i,j] + oneArray[i,j] * twoArray[j,j];
-    }
-
-    }
-    return endArray;
- }
-
-
-
-int[,] oneMatrix = CreateRandom2dArray();
-Show2dArray(oneMatrix);
-int[,] twoMatrix = CreateRandom2dArray();
-Show2dArray(twoMatrix);
-
-Metod(oneMatrix,twoMatrix);
-Show2dArray(resultMatrix);
+    NaturalNumbers(m - 1, n);
+    Console.Write(m + " ");
+  }
+  if(m < n) 
+  {
+    NaturalNumbers(m, n - 1);
+    Console.Write(n + " ");
+  }
+  if(m == n) 
+    Console.Write(n + " ");
+}
+NaturalNumbers(10, 1);
+*/
 
 
+// Напишите программу, которая на вход принимает два числа A и B, и возводит число А в целую степень B.
+
+double PowerAB(double a, int b)
+{   if (b<0)return 1/a*PowerAB(a,b+1);
+    if(b>0) return a*PowerAB(a,b-1);
+    else return 1;
+}
+Console.WriteLine(PowerAB(2,-3));
